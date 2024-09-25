@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var amount = parseFloat(prompt("Enter the amount to convert:"));
+        var conversionType = prompt("Enter the conversion type (INR to USD or USD to INR):");
+        var rupeeToDollarRate = 0.012;
+        var dollarToRupeeRate = 83;
+
+
+        if (amount == amount) {
+
+            switch (conversionType.toUpperCase()) {
+                case "INR TO USD":
+                    var convertedAmount = amount * rupeeToDollarRate;
+                    document.write("₹" + amount + " = $" + convertedAmount.toFixed(2));
+                    break;
+                case "USD TO INR":
+                    var convertedAmount = amount * dollarToRupeeRate;
+                    document.write("$" + amount + " = ₹" + convertedAmount.toFixed(2));
+                    break;
+                default:
+                    document.write("Invalid conversion type. Please enter 'INR to USD' or 'USD to INR'.");
+            }
+        } else {
+            document.write("Invalid input. Please enter a valid number.");
+        }
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</head>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
